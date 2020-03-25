@@ -1,0 +1,9 @@
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\bin\Debug\netcoreapp2.2\Application.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\bin\Debug\netcoreapp2.2\Application.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\01-Application\Application\obj\Debug\netcoreapp2.2\Application.pdb

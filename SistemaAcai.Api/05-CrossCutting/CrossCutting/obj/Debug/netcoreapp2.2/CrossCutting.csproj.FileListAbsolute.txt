@@ -1,0 +1,8 @@
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.deps.json
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CoreCompileInputs.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfoInputs.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfo.cs
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.pdb
