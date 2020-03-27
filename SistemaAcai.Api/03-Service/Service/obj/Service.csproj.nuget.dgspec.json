@@ -4,14 +4,14 @@
     "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj": {
+    "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj",
-        "projectName": "Service",
-        "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Guilh\\.nuget\\packages\\",
-        "outputPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\obj\\",
+        "outputPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -47,6 +47,145 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Guilh\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\03-Service\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pronetnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj"
+              },
+              "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\Data.csproj": {
+                "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Guilh\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\04-Data\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pronetnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Arquivos\\Projetos\\SistemaAcai\\SistemaAcai.Api\\02-Domain\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             }
           },
           "imports": [

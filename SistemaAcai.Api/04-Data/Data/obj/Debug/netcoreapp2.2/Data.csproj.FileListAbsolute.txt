@@ -7,3 +7,8 @@ D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\obj\Debug\netcorea
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\obj\Debug\netcoreapp2.2\Data.AssemblyInfo.cs
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\obj\Debug\netcoreapp2.2\Data.dll
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\obj\Debug\netcoreapp2.2\Data.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\bin\Debug\netcoreapp2.2\Data.runtimeconfig.json
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\bin\Debug\netcoreapp2.2\Data.runtimeconfig.dev.json
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\04-Data\Data\obj\Debug\netcoreapp2.2\Data.csproj.CopyComplete

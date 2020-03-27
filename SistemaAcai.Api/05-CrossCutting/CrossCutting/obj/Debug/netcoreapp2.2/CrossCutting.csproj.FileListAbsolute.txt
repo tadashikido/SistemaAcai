@@ -6,3 +6,11 @@ D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\ob
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfo.cs
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.dll
 D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csprojAssemblyReference.cache
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Data.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Service.dll
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Service.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\bin\Debug\netcoreapp2.2\Data.pdb
+D:\Arquivos\Projetos\SistemaAcai\SistemaAcai.Api\05-CrossCutting\CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CopyComplete
