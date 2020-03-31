@@ -1,0 +1,143 @@
+.order {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.order .items {
+  padding: 20px;
+}
+
+.order .resume {
+  width: 100%;
+  background: #b1c700;
+  z-index: 999;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+}
+
+.order .resume img {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.resume .detalhe {
+  padding: 20px;
+}
+
+.resume .detalhe span {
+  line-height: 20px;
+  display: block;
+  font-size: 25px;
+}
+
+.resume .detalhe .value {
+  color: #481354;
+  font-size: 30px;
+  margin-top: 13px;
+  line-height: 31px;
+  text-transform: capitalize;
+}
+
+.resume .button {
+  width: 80%;
+  margin: 0 auto;
+  background: #7f0ac8;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #6505a1;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume .button:hover {
+  background: #6505a1;
+}
+
+.group-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0;
+}
+
+.group-select {
+  margin-top: 30px;
+}
+
+.group-select .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #481354;
+}
+
+.group-item .item {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.group-item .item:hover {
+  background: #f0f0f0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.group-item .item.selected {
+  background: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.group-item .item img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.group-item .item span {
+  margin-top: 18px;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #481354;
+}
+
+@media (max-width: 800px) {
+  .group-item .item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .group-item {
+    grid-template-columns: 1fr;
+  }
+
+  .group-item .item img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .order {
+    grid-template-columns: 1fr;
+  }
+
+  .order .resume {
+    margin-top: 100px;
+  }
+
+  .order .resume img {
+    margin-top: -130px;
+  }
+}

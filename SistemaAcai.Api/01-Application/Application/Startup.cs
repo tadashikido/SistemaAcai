@@ -25,6 +25,8 @@ namespace Application
             Configuration = configuration;
         }
 
+        readonly string cors = "_cors";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -32,6 +34,15 @@ namespace Application
         {
             ConfigureRepository.ConfigureDependeciesRepository(services);
             ConfigureService.ConfigureDependeciesService(services);
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(cors,
+                builder =>
+                {
+                    builder.WithOrigins("*");
+                });
+            });
 
             var config = new AutoMapper.MapperConfiguration(c =>
             {
@@ -77,6 +88,8 @@ namespace Application
                 c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sistema Açaí");
             });
+
+            app.UseCors(cors);
 
             var option = new RewriteOptions();
             option.AddRedirect("^$", "swagger");

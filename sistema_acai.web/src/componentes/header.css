@@ -1,0 +1,33 @@
+.header {
+  background: #7f0ac8;
+  color: white;
+  padding: 20px;
+  height: 70px;
+}
+
+.header .title {
+  display: block;
+  font-size: 23px;
+}
+
+.header .subtitle {
+  display: block;
+  font-size: 35px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    background: #7f0ac8;
+    height: 40px;
+  }
+
+  .header .title {
+    display: block;
+    font-size: 15px;
+  }
+
+  .header .subtitle {
+    display: block;
+    font-size: 20px;
+  }
+}

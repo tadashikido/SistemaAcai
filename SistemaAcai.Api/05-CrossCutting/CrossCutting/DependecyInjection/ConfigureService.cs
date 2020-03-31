@@ -9,6 +9,7 @@ namespace CrossCutting.DependecyInjection
         public static void ConfigureDependeciesService(IServiceCollection serviceCollection)
         {
             serviceCollection.AddTransient<IOrderService, OrderService>();
+            serviceCollection.AddTransient<IProductService, ProductService>();
         }
     }
 }
