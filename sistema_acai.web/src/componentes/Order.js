@@ -6,16 +6,6 @@ import { API_PATH } from "./api";
 
 import "./order.css";
 
-import Morango from "../img/morango.png";
-import Kiwi from "../img/kiwi.png";
-import Banana from "../img/banana.png";
-import Pequeno from "../img/pequeno.png";
-import Medio from "../img/medio.png";
-import Grande from "../img/grande.png";
-import Granola from "../img/granola.png";
-import LeiteNinho from "../img/ninho.png";
-import Pacoca from "../img/pacoca.png";
-
 export default class Order extends Component {
   state = {
     flavors: [],
@@ -25,30 +15,79 @@ export default class Order extends Component {
   };
 
   selectSize = name => {
+    const newsizes = this.state.sizes.map(f => ({
+      ...f,
+      selected: f.name === name ? true : false
+    }));
+
     this.setState({
-      sizes: this.state.sizes.map(f => ({
-        ...f,
-        selected: f.name === name ? true : false
-      }))
+      sizes: newsizes
     });
+
+    const flavors = this.state.flavors.filter(f => f.selected).map(f => f.name);
+    const sizes = newsizes.filter(f => f.selected).map(f => f.name);
+    const additionals = this.state.additionals
+      .filter(f => f.selected)
+      .map(f => f.name);
+    this.CalculaOrder(flavors, sizes, additionals);
   };
 
   selectFlavor = name => {
+    const newflavors = this.state.flavors.map(f => ({
+      ...f,
+      selected: f.name === name ? true : false
+    }));
+
     this.setState({
-      flavors: this.state.flavors.map(f => ({
-        ...f,
-        selected: f.name === name ? true : false
-      }))
+      flavors: newflavors
     });
+
+    const flavors = newflavors.filter(f => f.selected).map(f => f.name);
+    const sizes = this.state.sizes.filter(f => f.selected).map(f => f.name);
+    const additionals = this.state.additionals
+      .filter(f => f.selected)
+      .map(f => f.name);
+    this.CalculaOrder(flavors, sizes, additionals);
   };
 
   selectAditional = name => {
+    const newAdditionals = this.state.additionals.map(f => ({
+      ...f,
+      selected: f.name === name ? !f.selected : f.selected
+    }));
+
     this.setState({
-      additionals: this.state.additionals.map(f => ({
-        ...f,
-        selected: f.name === name ? !f.selected : f.selected
-      }))
+      additionals: newAdditionals
     });
+
+    const flavors = this.state.flavors.filter(f => f.selected).map(f => f.name);
+    const sizes = this.state.sizes.filter(f => f.selected).map(f => f.name);
+    const additionals = newAdditionals.filter(f => f.selected).map(f => f.name);
+    this.CalculaOrder(flavors, sizes, additionals);
+  };
+
+  CalculaOrder = (flavors, sizes, additionals) => {
+    fetch(API_PATH + "/order/calcula_order", {
+      method: "POST",
+      headers: {
+        accept: "text/plan",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        flavor: flavors.length > 0 ? flavors[0] : "",
+        acaiSize: sizes.length > 0 ? sizes[0] : "",
+        additional: additionals
+      })
+    })
+      .then(result => result.json())
+      .then(result => {
+        this.setState({
+          order: {
+            total: result.total,
+            prepTime: result.prepTime
+          }
+        });
+      });
   };
 
   componentDidMount() {
@@ -90,7 +129,12 @@ export default class Order extends Component {
   }
 
   render() {
-    const { flavors, sizes, additionals } = this.state;
+    const {
+      flavors,
+      sizes,
+      additionals,
+      order: { total, prepTime }
+    } = this.state;
 
     return (
       <div className="order">
@@ -116,8 +160,8 @@ export default class Order extends Component {
             size={sizes.filter(f => f.selected).map(f => f.name)}
             flavor={flavors.filter(f => f.selected).map(f => f.name)}
             additional={additionals.filter(f => f.selected).map(f => f.name)}
-            total={10}
-            prepTime={2}
+            total={total}
+            prepTime={prepTime}
           />
         </div>
       </div>

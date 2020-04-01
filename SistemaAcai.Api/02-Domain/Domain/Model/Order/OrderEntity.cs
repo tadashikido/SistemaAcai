@@ -16,12 +16,26 @@ namespace Domain.Model.Order
 
         public decimal Total
         {
-            get => Flavor.Price + AcaiSize.Price + Additional.Sum(a => a.Price);
+            get
+            {
+                var flavorPrice = Flavor != null ? Flavor.Price : 0;
+                var acaiSizePrice = AcaiSize != null ? AcaiSize.Price : 0;
+                var additionalPrice = Additional != null ? Additional.Sum(a => a.Price) : 0;
+
+                return flavorPrice + acaiSizePrice + additionalPrice;
+            }
         }
 
         public int PrepTime
         {
-            get => Flavor.PrepTime + AcaiSize.PrepTime + Additional.Sum(a => a.PrepTime);
+            get
+            {
+                var flavorPrepTime = Flavor != null ? Flavor.PrepTime : 0;
+                var acaiSizePrepTime = AcaiSize != null ? AcaiSize.PrepTime : 0;
+                var additionalPrepTime = Additional != null ? Additional.Sum(a => a.PrepTime) : 0;
+
+                return flavorPrepTime + acaiSizePrepTime + additionalPrepTime;
+            }
         }
 
         public OrderModel(Guid id, FlavorModel flavor, AcaiSizeModel acaiSize, List<AdditionalModel> additional)

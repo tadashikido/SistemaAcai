@@ -9,8 +9,9 @@ namespace Domain.Service
     {
         OrderResultDto Get(Guid id);
         IEnumerable<OrderResultDto> GetAll();
-        OrderResultDto Post(OrderDto orderEntity);
-        OrderResultDto Put(OrderDto orderEntity);
+        OrderResultDto Post(OrderDto orderDto);
+        OrderResultDto Put(OrderDto orderDto);
         bool Delete(Guid id);
+        OrderResultDto CalculaOrder(OrderDto orderDto);
     }
 }

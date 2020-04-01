@@ -133,5 +133,22 @@ namespace Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+        [HttpPost]
+        [Route("calcula_order")]
+        public ActionResult<OrderResultDto> CalculaOrder([FromBody] OrderDto order)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest();
+
+                return Ok(_service.CalculaOrder(order));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
     }
 }

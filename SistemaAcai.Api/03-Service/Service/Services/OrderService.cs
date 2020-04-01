@@ -74,5 +74,26 @@ namespace Service.Services
         {
             return _repository.Delete(id);
         }
+
+        public OrderResultDto CalculaOrder(OrderDto orderDto)
+        {
+            var orderBuilder = new OrderBuilder();
+            if (!String.IsNullOrEmpty(orderDto.Flavor))
+                orderBuilder.SetFlavor(orderDto.Flavor);
+
+            if (!String.IsNullOrEmpty(orderDto.AcaiSize))
+                orderBuilder.SetSize(orderDto.AcaiSize);
+
+            orderDto.Additional.ToList().ForEach(a =>
+            {
+                orderBuilder.AddAdditional(a);
+            });
+
+            var orderModel = orderBuilder.Build();
+
+            var orderEntity = _mapper.Map<OrderEntity>(orderModel);
+
+            return _mapper.Map<OrderResultDto>(orderEntity);
+        }
     }
 }

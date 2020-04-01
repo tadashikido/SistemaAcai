@@ -41,6 +41,7 @@ namespace Application
                 builder =>
                 {
                     builder.WithOrigins("*");
+                    builder.WithHeaders(new string[] { "Origin", "X-Requested-With", "Content-Type", "Accept" });
                 });
             });
 
